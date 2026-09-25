@@ -1,0 +1,573 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    height: 90px;
+}
+
+nav img {
+    margin-right: 250px;
+}
+
+
+nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+nav a {
+    color: #103060;
+    margin-left: 20px;
+    text-decoration: none;
+    text-decoration: solid;
+    font-weight: bold;
+    
+}
+
+.nav-links >:last-child{
+    border: 1px solid #006BC9;
+    padding: 17px 42px;
+    margin-left: 30px;
+    margin-right: 20px;
+    color: #006BC9;
+}
+
+.nav-links > a:last-child:hover {
+    transition: 0.6s;
+    background-color: #006BC9;
+    color: white;
+}
+
+.nav-links {
+    margin-left: auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-menu {
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 170px;
+    padding: 10px 0px;
+    border: 1px solid white;
+    z-index: 1000;
+    
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin: 5px 0  15px 15px;
+}
+
+.dropdown-menu a {
+    display: block;
+
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+.fa-magnifying-glass {
+    font-size: 18px;
+    color: #103060;
+    cursor: pointer;
+    margin-left: 30px;
+    
+}
+
+.hero {
+    background-color: #006BC9;
+    background-image: url(hero.png);
+    
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    animation: curtain 1.2s ease-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    max-width: 800px;
+    transform: translate(0px, 110px);
+    font-size: 60px;
+    text-shadow: 2px 2px 1px black;
+
+}
+
+@keyframes curtain {
+    from {
+        clip-path: inset(0 0 100% 0);
+        
+    }
+    to {
+        clip-path: inset(0 0 0 0)
+        
+    }
+}
+
+.services {
+    background-color: #103060;
+    height: 80px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    
+
+}
+
+section h2 {
+    margin: 0px;
+    
+}
+
+.industry h2 {
+    color:#103060;
+    font-weight: bold;
+    font-size: 45px;
+    padding-left: 40px;
+    padding-top: 80px;
+    animation: appearUp 1.2s ease-out;
+}
+
+@keyframes appearUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.industry p {
+    
+    color: #103060;
+    padding-left: 40px;
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.5;
+    font-weight:500;
+}
+
+.industry > a {
+    
+    border: 1px solid #006BC9;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    color:#006BC9;
+    font-weight: bold;
+    transform: translate(1035px , -70px);
+    margin-bottom: 100px;
+
+
+}
+.industry a:hover {
+    background-color: #006BC9;
+    color: white;
+    transition: 0.6s;
+}
+
+.industry {
+    background-color: #F5F6F8;
+    padding-bottom: 100px;
+}
+
+.expertise-cards {
+    display: flex;
+    justify-content: center; 
+    margin: 5px auto;
+    background-color: transparent;
+    width: 95%;
+    gap: 20px;
+    
+    
+    
+    
+}
+
+.expertise-card {
+    width: 50%;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.expertise-card h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.expertise-card p {
+    font-size: 17px;
+}
+.expertise-card p::before {
+    content: "➜ ";
+    margin-right: 10px;
+    font-size: 15px;
+    
+    color:#006BC9
+}
+
+.expertise-card a {
+    text-decoration: none;
+    margin-left: 30px;
+    color: #086BC9;
+    font-weight: 1000;
+    font-size: 18px;
+    
+}
+
+.expertise-card a::after {
+    content: "❯";
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.team {
+    background-color: white;
+    padding: 80px 40px;
+}
+
+.team h2 {
+    color:#103060;
+    margin-bottom: 50px;
+    font-size: 45px;
+}
+
+.team-cards {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+    margin-bottom:90px;
+}
+
+.team-card {
+    position:relative;
+}
+
+.team-card img {
+    width: 100%;
+    height: 500px;
+    object-fit:cover;
+    display:block;
+    margin-bottom: 60px;
+}
+
+.team-card h3 {
+    color:#103060;
+    font-size: 24px;
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.team-card p {
+    color: #103060;
+    font-size: 13px;
+    display:flex;
+    justify-content: center;
+}
+
+.team-card a {
+    text-decoration: none;
+    color:#006BC9;
+    font-weight: bolder;
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
+}
+
+.team-info {
+    background-color: white;
+    padding: 10px;
+    position:absolute;
+    bottom:0;
+    left:8%;
+    width:80%;
+    
+
+}
+
+.trust {
+    background-color: #F5F6F8;
+    padding: 100px 30px;
+    color:#103060;
+    
+}
+
+.trust h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    
+}
+
+.trust-intro {
+    font-size: 20px;
+    width: 50%;
+    
+}
+
+.trust-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 50px;
+    width: 70%;
+}
+
+.trust-points h3 {
+    font-size: 25px;
+}
+
+.trust-points p {
+    font-size: 21px;
+    width: 100%;
+
+}
+
+.trust-stats {
+   width: 25%;
+    margin-top: 0;
+    text-align: center;
+}
+
+.trust-stats strong {
+    color:#006BC9;
+    font-size: 65px;
+    display:block;
+}
+
+.trust-stats p {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.trust-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+    width: 90%;
+    margin: 0 auto;
+    transform: translateX(-50px);
+    
+}
+
+.trust-stats > div {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 20px;
+    border-top: 1px solid #d9d9d9;
+}
+
+
+footer {
+    background-color: #103060;
+
+}
+
+.footer-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer-links {
+display:flex;
+flex-direction: column;
+gap:10px;
+}
+
+.footer-links h3 {
+ 
+color: white;
+font-size: 15px;
+font-weight: bold;
+}
+
+.footer-links a {
+color:white;
+text-decoration: none;
+font-size: 14px;
+transition: 0.2s;
+}
+
+.footer-description p {
+color: white;
+width: 60%;
+margin-bottom: 40px;
+}
+
+.footer-description a {
+text-decoration: none;
+color: white;
+border:1px solid white;
+padding: 15px 35px;
+transition: 0.6s;
+}
+
+.location-area {
+    color: white;
+    display:flex;
+    gap:300px;
+    margin-left: 50px;
+    border-top: 1px solid #006BC9;
+    border-bottom: 1px solid #006BC9;
+    width:93%;
+    
+}
+
+.footer-location {
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.footer-location p {
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    color:white;
+    margin-left: 900px;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.footer-description a:hover {
+background-color: white;
+color:#103060
+}
+
+.footer-links a:hover {
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#scrollupbutton {
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    display:none;
+    background-color:#006BC9;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    cursor:pointer;
+}
+
+.team-card h3 {
+    transition:0.3s;
+}
+
+.team-card h3:hover {
+    color:#006BC9;
+    font-weight: bolder;
+    font-size:35px;
+}
+
+.team-card a {
+    transition: 0.3s;
+}
+
+.team-card a:hover {
+    color:#103060;
+    font-size: 20px;
+}
+
+.team-card {
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform:translateY(-5px);
+}
+
+.trust > h2 {
+    display:inline-block;
+    position: relative;
+}
+
+.trust > h2::after {
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background-color:#103060;
+    transition: width 0.5s ease;
+}
+
+.trust >h2:hover::after {
+    width: 100%;
+}
+
+.trust-points h3 {
+    position:relative;
+    display:inline-block;
+}
+
+.trust-points h3::after {
+    content: "";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background-color: #103060;
+    transition: width 0.5s ease;
+}
+
+.trust-points h3:hover::after {
+    width:100%;
+}
+
+
