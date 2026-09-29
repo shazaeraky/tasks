@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Stripe Checkout</title>
+        <link rel="stylesheet" href="stripe.css">
+
+    </head>
+
+    <body>
+        <header>stripe
+        <button id="dark-mode">☼</button></header>
+        <main>
+            <h1>Checkout</h1>
+        </main>
+
+         <div class="background-color"></div>
+    
+    <section class="payment-box">
+        <button class="apple-pay"><img src="apple.png">Pay   
+        </button>
+
+        <div class="divider">
+            <span>Or pay with card</span>
+        </div>
+
+        <label>Email</label>
+        <input type="email">
+        <label>Card information</label>
+
+        <div class="card-number">
+            <input type="text" placeholder="1234 1234 1234 1234">
+
+            <div class="card-logo">
+                <img src="visa.png">
+                <img src="mastercard.jpg">
+                <img src="amexlogo.png">
+            </div>
+        </div>
+
+        <div class="card-details">
+            <input type="text" placeholder="MM // YY">
+            <input type="text" placeholder="CVC">
+        </div>
+
+        <label>Country or region</label>
+        <select>
+            <option>United States</option>
+            <option>Egypt</option>
+        </select>
+
+        <button class="pay-button">Pay $</button>
+
+    </section>
+
+    <script src="stripe.js"></script>
+
+    </body>
+
+    <div class="background-color"></div>
+
+    
+
+
+
+
+</html>
